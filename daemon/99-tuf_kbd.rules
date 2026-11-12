@@ -1,0 +1,5 @@
+ACTION=="add",
+SUBSYSTEM=="leds",
+KERNEL=="asus:rgb:kbd_backlight",
+RUN+="/bin/chgrp video /sys%p/brightness /sys%p/multi_intensity /sys%p/trigger",
+RUN+="/bin/chmod g+w /sys%p/brightness /sys%p/multi_intensity /sys%p/trigger"

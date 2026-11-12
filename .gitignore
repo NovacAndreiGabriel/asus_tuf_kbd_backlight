@@ -1,0 +1,11 @@
+build/
+*.o
+*.ko
+*.ko.zst
+*.mod
+*.mod.c
+*.cmd
+.*.cmd
+*.symvers
+*.order
+.tmp_versions/

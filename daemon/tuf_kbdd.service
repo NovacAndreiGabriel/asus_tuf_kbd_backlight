@@ -1,0 +1,12 @@
+[Unit]
+Description=ASUS TUF keyboard backlight daemon
+After=systemd-udevd.service
+
+[Service]
+ExecStart=/usr/local/bin/tuf_kbdctl daemon
+Restart=on-failure
+RestartSec=2
+StateDirectory=tuf_kbd
+
+[Install]
+WantedBy=multi-user.target
